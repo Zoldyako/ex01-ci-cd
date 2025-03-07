@@ -101,13 +101,23 @@
     .submit-btn:hover {
       background-color: #1b263b;
     }
+
+    #info {
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 4px;
+      
+      text-align: center;
+      display: none;
+    }
   </style>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="login-container">
     <h2>Acessar</h2>
-    
-    <form onsubmit="#">
+    <div id="info"></div>
+    <form accept="./script.js" method="GET">
       <div class="form-group">
         <label for="nome">Seu nome</label>
         <input type="text" id="nome" name="nome" required>
