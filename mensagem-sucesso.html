@@ -1,21 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congratulations!!!</title>
-    <style>
-        head{
-            display: flex;
-            justify-content: center;
-            color: pink;
-            font-size: 48px;
-            font-weight: 700px;
-            font-family: Helvetica;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucesso no Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    
+    .success-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    
+    .icon {
+      font-size: 5rem;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+    
+    .btn {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn:hover {
+      background: #45a049;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <head><h1>Parábens, você é fera!!!</h1></head><br>
+  <div class="success-container">
+    <div class="icon">✓</div>
+    <h1>Login Bem-Sucedido!</h1>
+    <p>Legal, você é você mesmo!!</p>
+    <p>Agora você tem acesso completo ao sistema.</p>
+    <a href="index.html" class="btn">Voltar ao Início</a>
+  </div>
+
+  <script>
+    // Adiciona um pequeno efeito de confetti após 1 segundo
+    setTimeout(() => {
+      const confettiSettings = { 
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      };
+      
+      // Verifica se a biblioteca está disponível (opcional)
+      if (window.confetti) {
+        confetti(confettiSettings);
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
