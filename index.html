@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Login</title>
   <style>
-    /* Reset básico */
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Estilização do body com fundo azul escuro e figuras geométricas */
     body {
       font-family: Arial, sans-serif;
       background: #0d1b2a; /* Azul escuro */
@@ -24,7 +23,6 @@
       overflow: hidden;
     }
 
-    /* Figuras geométricas de fundo */
     body::before,
     body::after {
       content: "";
@@ -49,11 +47,10 @@
       border-radius: 10%;
     }
 
-    /* Caixa central com efeito de profundidade */
     .login-container {
       position: relative;
       z-index: 1;
-      background: #ffffff; /* Tom de branco agradável */
+      background: #ffffff; 
       padding: 40px;
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -67,7 +64,6 @@
       color: #0d1b2a;
     }
 
-    /* Estilização dos campos do formulário */
     .form-group {
       margin-bottom: 20px;
     }
@@ -106,7 +102,6 @@
       padding: 8px;
       margin: 8px 0;
       border-radius: 4px;
-      
       text-align: center;
       display: none;
     }
@@ -123,10 +118,6 @@
         <input type="text" id="nome" name="nome" required>
       </div>
       <div class="form-group">
-        <label for="email">Seu e-mail</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
         <label for="senha">Sua senha</label>
         <input type="password" id="senha" name="senha" required>
       </div>
@@ -137,6 +128,5 @@
       <button type="submit" class="submit-btn">Entrar</button>
     </form>
   </div>
-  
 </body>
 </html>
