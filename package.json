@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Zoldyako/ex01-ci-cd#readme",
   "devDependencies": {
+    "jest": "^29.7.0",
     "live-server": "^1.2.2"
   }
 }
