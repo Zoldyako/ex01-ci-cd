@@ -1,0 +1,9 @@
+José:
+    A falta de experiência em usar a cli do github foi um problema para mim, e a função de pull request do github ainda é meio confusa.
+
+Matheus:
+    Dificuldade em entender o processo de merging.
+
+Yuri:
+
+Guilherme Antonio:
